@@ -32,6 +32,7 @@ background-color:  rgb(235, 118, 118);;
 .travel-entry {
 display:flex;
 margin-top: 2em;
+padding: 2em;
 }
 
 .travel-image{
@@ -61,4 +62,7 @@ h2, h3{
   margin-top:0.5em;
 }
 
+p{
+  padding: 1em 0;
+}
 

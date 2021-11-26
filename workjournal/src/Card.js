@@ -1,18 +1,19 @@
 import React from "react";
 import Img from "./Img"
+import data from "./data"
 
-export default function Card(){
+export default function Card(props){
    return (
        <div className="travel-entry">
     <div className="card-image">
     <Img />
  </div>
  <div className="card-text">
- <h3 className="location-country"> JAPAN </h3>
- <h4 className="map-link"> View on Google Maps</h4>
- <h1 className="location"> Mount Fuji</h1>
- <h2 className="date">12 Jan 2021</h2>
- <p>Mount fuji is the most amazing tall mountain in the world</p>
+ <h3 className="location-country"> {props.location} </h3>
+ <h4 className="map-link" src={props.googleMapsUrl}>View on Google Maps</h4>
+ <h1 className="location"> {props.title}</h1>
+ <h2 className="date">{props.startDate}-{props.endDate}</h2>
+ <p>{props.description}</p>
  </div>
  </div>
   )
