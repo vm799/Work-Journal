@@ -30,9 +30,11 @@ background-color:  rgb(235, 118, 118);;
 }
 
 .travel-entry {
-display:flex;
+  display: flex;
+  flex-direction: row;
 margin-top: 2em;
 padding: 2em;
+align-content: center;
 }
 
 .travel-image{
@@ -44,25 +46,69 @@ border-radius: 5px;
 
 }
 
-.card-text{
-  display: flex;
-  flex-direction: column;
+.card-text-main{
+ 
  padding: 0 1em;
- background-color: beige;
+ background-color:pink;
  min-width:275px;
  min-height: 200px;
 
 
 }
-h1, h2, h3, p{
-  margin:0;
+.card-text-main{
+  display: flex;
+  flex-direction: column;
+  margin:1em;
+}
+.card-text-heading{
+  display: flex;
+  flex-direction: row;
+  background-color: lawngreen;
+  align-content: center;
+  
 }
 
-h2, h3{
-  margin-top:0.5em;
+h1, h2, h3,h4, p{
+  margin:0;
+  padding:0;
 }
+
+
 
 p{
   padding: 1em 0;
 }
 
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+h3, h4{
+  padding: 10px;
+}
+
+.img--badge-to-do{
+  
+    
+    background-color: rgb(251, 221, 252);
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px rgb(222, 213, 213) solid;
+   
+}
+
+.img--badge-done{
+  
+    
+  background-color: rgb(181, 250, 167);
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px rgb(222, 213, 213) solid;
+ 
+}
